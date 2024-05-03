@@ -163,12 +163,13 @@ class ScreenshotController {
       configuration: ViewConfiguration(
         // size: logicalSize,
         logicalConstraints: BoxConstraints(
-          maxWidth: logicalSize.width,
           maxHeight: logicalSize.height,
+          maxWidth: logicalSize.width,
         ),
         devicePixelRatio: pixelRatio ?? 1.0,
       ),
     );
+
 
     final PipelineOwner pipelineOwner = PipelineOwner();
     final BuildOwner buildOwner = BuildOwner(
